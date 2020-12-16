@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome"
+                android:text="Bem vindo!"
                 android:textColor="#363A43"
                 android:textSize="30sp"
                 android:textStyle="bold"/>
@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Please enter your name"
+                android:text="Vamos começar? Qual o seu nome?"
                 android:textColor="#7A8089"
                 android:textSize="16sp"/>
 
@@ -64,7 +64,7 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:hint="Nome"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089"/>
 
