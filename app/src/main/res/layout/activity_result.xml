@@ -77,7 +77,7 @@
         android:textStyle="bold" />
 
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/AboutUsFragment"
         android:name="br.henrique.francisco.quizapp.AboutUsFragment"
         android:layout_width="match_parent"
         android:layout_height="110dp"

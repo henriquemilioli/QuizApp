@@ -10,21 +10,23 @@ import kotlinx.android.synthetic.main.about_us_fragment.*
 
 class AboutUsFragment : Fragment() {
 
-     private lateinit var viewModel: AboutUsViewModel
+     private lateinit var aboutUsViewModel: AboutUsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.about_us_fragment, container, false)
+        var view = inflater.inflate(R.layout.about_us_fragment, container, false)
+        aboutUsViewModel = ViewModelProvider(requireActivity(), ViewModelFactory()).get(aboutUsViewModel::class.java)
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        textView.text = viewModel.aluno
-        textView2.text = viewModel.professor
-        textView3.text = viewModel.curso
+        textView.text = aboutUsViewModel.aluno.value
+        textView2.text = aboutUsViewModel.professor.value
+        textView3.text = aboutUsViewModel.curso.value
     }
 
 
