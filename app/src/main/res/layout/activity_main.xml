@@ -14,7 +14,7 @@
         android:id="@+id/tv_app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="QuizApp"
+        android:text="Quiz das Bandeiras"
         android:gravity="center"
         android:layout_marginBottom="30dp"
         android:textSize="25sp"
@@ -54,20 +54,21 @@
                 android:textSize="16sp"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
                     android:hint="Nome"
+                    android:inputType="textCapWords"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089"/>
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -76,17 +77,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="Start"
+                android:text="COMEÇAR!"
                 android:textSize="18dp"
                 android:textColor="@android:color/white"
                 >
             </Button>
-
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
-
-
-
-
 </LinearLayout>

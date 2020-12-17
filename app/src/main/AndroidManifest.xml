@@ -12,10 +12,14 @@
         <activity
             android:name=".ResultActivity"
             android:screenOrientation="fullSensor"
-            android:theme="@style/NoActionBarTheme"></activity>
+            android:theme="@style/NoActionBarTheme">
+
+        </activity>
         <activity
             android:name=".QuizQuestionActivity"
-            android:screenOrientation="fullSensor"></activity>
+            android:screenOrientation="fullSensor">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="fullSensor"
