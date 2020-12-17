@@ -17,7 +17,7 @@ class AboutUsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var view = inflater.inflate(R.layout.about_us_fragment, container, false)
-        aboutUsViewModel = ViewModelProvider(requireActivity(), ViewModelFactory()).get(aboutUsViewModel::class.java)
+        aboutUsViewModel = ViewModelProvider(requireActivity(), ViewModelFactory()).get(AboutUsViewModel::class.java)
         return view
     }
 
