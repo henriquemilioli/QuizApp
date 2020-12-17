@@ -22,7 +22,7 @@
     <ImageView
         android:id="@+id/iv_throphy"
         android:layout_width="wrap_content"
-        android:layout_height="349dp"
+        android:layout_height="252dp"
         android:contentDescription="image"
         android:src="@drawable/ic_trophy" />
 
@@ -54,15 +54,32 @@
         android:textColor="@android:color/secondary_text_dark"
         android:textSize="20sp"
         tools:text="Seu placar foi 9 de 10" />
+    <Button
+        android:id="@+id/btn_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:text="Mais Jogos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_marginTop="10dp"
         android:background="@android:color/white"
         android:text="FIM"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="br.henrique.francisco.quizapp.AboutUsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp" />
 </LinearLayout>
